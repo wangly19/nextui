@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container } from '@nextui-org/react';
-import { NotifyBanner } from '@components';
 import { Route } from '@lib/docs/page';
 import Header from './header';
 import Footer from './footer';
@@ -20,11 +19,7 @@ const DefaultLayout: React.FC<React.PropsWithChildren<Props>> = ({
   return (
     <div id="app-container">
       <Header />
-      <NotifyBanner
-        text="Dropdown component"
-        href="/docs/components/dropdown"
-      />
-      <Navbar isHome hasNotify routes={routes} />
+      <Navbar isHome routes={routes} />
       <Container
         lg={true}
         id="main-container"
